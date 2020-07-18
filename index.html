@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h2>Chapter 43 - 48 ---- Task 1</h2>
+    <a href="javascript:;" onclick="showAlertOnLink()">Click Me!</a>
+    <hr />
+    <h2>Chapter 43 - 48 ---- Task 2</h2>
+    <div class="container">
+        <h3>Mobile Phone Lookup</h3>
+        <div class="row">
+            <div class="col"><img src="images/iphone6.jpg" class="img" onclick="showAlert()"></div>
+            <div class="col"><img src="images/galaxys6.jpg" class="img" onclick="showAlert()"></div>
+            <div class="col"><img src="images/v10.jpg" class="img" onclick="showAlert()"></div>
+            <div class="col"><img src="images/p8.jpg" class="img" onclick="showAlert()"></div>
+        </div>
+    </div>
+    <hr />
+    <h2>Chapter 43 - 48 ---- Task 4</h2>
+    <div>
+        <img src="images/car1.jpg" id="img" width="400px" height="300px" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+    </div>
+
+    <hr />
+    <h2>Chapter 43 - 48 ---- Task 5</h2>
+
+    <div>
+        <h1 id="count">0</h1>
+        <button onclick="increaseCounter()">Increase Counter</button>
+        <button onclick="decreaseCounter()">Decrease Counter</button>
+    </div> 
+
+    <hr />
+    <h2>Chapter 49 - 52 ---- Task 1</h2>
+    <div class="container">
+        <form action="javascript:void(0)">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="Enter First Name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Enter Last Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="number" class="form-control" id="contactNumber" placeholder="Contact Number">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="Country">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="signup()">Submit</button>
+        </form>
+    </div>
+    <hr />
+    <h2>Chapter 49 - 52 ---- Task 2</h2>
+    <div>
+    <p id="para">Lorem ipsum dolor sit amet consectetur
+        <a href="javascript:void(0)" onclick="readmore()">Readmore</a>
+    </p>
+</div>
+<hr />
+    <h2>Chapter 49 - 52 ---- Task 3</h2>
+        <div class="container">
+            <table cellspacing=2 cellpadding=5 id="data_table">
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Roll Number</th>
+                    <th>Contact Number</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="name"></td>
+                    <td><input type="text" id="class"></td>
+                    <td><input type="text" id="rollNumber"></td>
+                    <td><input type="text" id="contactNumber"></td>
+                    <td><input type="text" id="email"></td>
+                    <td><input type="button" class="add" onclick="submit();" value="Submit"></td>
+                    </tr>
+            </table>
+        </div>
+        <hr />
+
+    <h2>Chapter 58 - 67</h2>
+        <div><h1> DOM </h1><div id="form-content" class="content"><label for="first-name">First Name</label><input type="text" id="first-name"/><label for="last-name">Last Name</label><input type="text" id="last-name"/><label for="email">Email</label><input type="text" id="email"/></div><div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div>
+
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+    crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+    crossorigin="anonymous "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+    crossorigin="anonymous "></script>
+
+</html>
