@@ -27,7 +27,8 @@
     <hr />
     <h2>Chapter 43 - 48 ---- Task 4</h2>
     <div>
-        <img src="images/car1.jpg" id="img" width="400px" height="300px" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+        <img src="images/car1.jpg" id="img" width="400px" height="300px" onmouseover="onMouseOver()"
+            onmouseout="onMouseOut()">
     </div>
 
     <hr />
@@ -37,7 +38,7 @@
         <h1 id="count">0</h1>
         <button onclick="increaseCounter()">Increase Counter</button>
         <button onclick="decreaseCounter()">Decrease Counter</button>
-    </div> 
+    </div>
 
     <hr />
     <h2>Chapter 49 - 52 ---- Task 1</h2>
@@ -69,35 +70,71 @@
     <hr />
     <h2>Chapter 49 - 52 ---- Task 2</h2>
     <div>
-    <p id="para">Lorem ipsum dolor sit amet consectetur
-        <a href="javascript:void(0)" onclick="readmore()">Readmore</a>
-    </p>
-</div>
-<hr />
+        <p id="para">Lorem ipsum dolor sit amet consectetur
+            <a href="javascript:void(0)" onclick="readmore()">Readmore</a>
+        </p>
+    </div>
+    <hr />
     <h2>Chapter 49 - 52 ---- Task 3</h2>
-        <div class="container">
-            <table cellspacing=2 cellpadding=5 id="data_table">
-                <tr>
-                    <th>Name</th>
-                    <th>Class</th>
-                    <th>Roll Number</th>
-                    <th>Contact Number</th>
-                    <th>Email</th>
-                </tr>
-                <tr>
-                    <td><input type="text" id="name"></td>
-                    <td><input type="text" id="class"></td>
-                    <td><input type="text" id="rollNumber"></td>
-                    <td><input type="text" id="contactNumber"></td>
-                    <td><input type="text" id="email"></td>
-                    <td><input type="button" class="add" onclick="submit();" value="Submit"></td>
-                    </tr>
-            </table>
-        </div>
-        <hr />
+    <div class="container">
+        <table cellspacing=2 cellpadding=5 id="data_table">
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Roll Number</th>
+                <th>Contact Number</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="name"></td>
+                <td><input type="text" id="class"></td>
+                <td><input type="text" id="rollNumber"></td>
+                <td><input type="text" id="contactNumber"></td>
+                <td><input type="text" id="email"></td>
+                <td><input type="button" class="add" onclick="submit();" value="Submit"></td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    <h2>Chapter 52 - 57</h2>
 
+    <div>
+        <img onclick="showImage(this)" src="images/car1.jpg" class="img" data-toggle="modal" data-target="#exampleModal"/>
+        <img onclick="showImage(this)" src="images/car2.jpg" class="img" data-toggle="modal" data-target="#exampleModal"/>
+        <img onclick="showImage(this)" src="images/car3.jpg" class="img" data-toggle="modal" data-target="#exampleModal"/>
+        <img onclick="showImage(this)" src="images/car4.jfif" class="img" data-toggle="modal" data-target="#exampleModal"/>
+        
+    </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="" class="bigImage" alt="" id="modalImage" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <hr />
     <h2>Chapter 58 - 67</h2>
-        <div><h1> DOM </h1><div id="form-content" class="content"><label for="first-name">First Name</label><input type="text" id="first-name"/><label for="last-name">Last Name</label><input type="text" id="last-name"/><label for="email">Email</label><input type="text" id="email"/></div><div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content"><label for="first-name">First Name</label><input type="text"
+                id="first-name" /><label for="last-name">Last Name</label><input type="text" id="last-name" /><label
+                for="email">Email</label><input type="text" id="email" /></div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
 
 </body>
 <script src="app.js"></script>
